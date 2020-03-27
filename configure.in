@@ -63,9 +63,9 @@ CF_ABI_DEFAULTS
 
 ###	Checks for programs.
 AC_ARG_WITH(ada,
-	[  --without-ada           suppress check for Ada compiler, don't build demo],
+	[  --with-ada           suppress check for Ada compiler, don't build demo],
 	[cf_with_ada=$withval],
-	[cf_with_ada=yes])
+	[cf_with_ada=no])
 
 if test "x$cf_with_ada" = xyes
 then

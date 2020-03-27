@@ -716,7 +716,7 @@ Optional Features:
   --with-rel-version=XXX  override derived release version
   --with-abi-version=XXX  override derived ABI version
   --with-system-type=XXX  test: override derived host system-type
-  --without-ada           suppress check for Ada compiler, don't build demo
+  --with-ada           suppress check for Ada compiler, don't build demo
   --without-cxx           do not adjust ncurses bool to match C++
   --without-cxx-binding   do not build C++ binding and demo
   --disable-db-install    suppress install of terminal database
@@ -1755,7 +1755,7 @@ if test "${with_ada+set}" = set; then
   withval="$with_ada"
   cf_with_ada=$withval
 else
-  cf_with_ada=yes
+  cf_with_ada=no
 fi;
 
 if test "x$cf_with_ada" = xyes
